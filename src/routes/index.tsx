@@ -326,7 +326,7 @@ const whyFeatures = [
 function HeroSection({ days, hours, mins, secs }: { days: number; hours: number; mins: number; secs: number }) {
   const [slide, setSlide] = React.useState(0);
   React.useEffect(() => {
-    const id = setInterval(() => setSlide((s) => (s + 1) % HERO_SLIDES.length), 5000);
+    const id = setInterval(() => setSlide((s) => (s + 1) % HERO_SLIDES.length), 1500);
     return () => clearInterval(id);
   }, []);
 
@@ -361,7 +361,7 @@ function HeroSection({ days, hours, mins, secs }: { days: number; hours: number;
           dir="rtl"
           lang="ar"
           className="hero-anim hero-fade mt-5 font-serif text-2xl text-[#F5D78E] md:text-4xl"
-          style={{ animationDelay: "400ms", textShadow: "0 2px 20px rgba(0,0,0,0.45)" }}
+          style={{ animationDelay: "400ms", textShadow: "0 2px 20px rgba(0,0,0,15)" }}
         >
           لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ
         </p>
