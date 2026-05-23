@@ -54,11 +54,7 @@ function useCountdown(target: Date) {
   return { days, hours, mins, secs, mounted };
 }
 
-const COUNTDOWN_TARGET = (() => {
-  const d = new Date();
-  d.setDate(d.getDate() + 90);
-  return d;
-})();
+const COUNTDOWN_TARGET = new Date("2026-08-19T00:00:00");
 
 function CountdownBox({ value, label }: { value: number; label: string }) {
   return (
