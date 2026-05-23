@@ -235,17 +235,10 @@ export function SiteFooter() {
               © {new Date().getFullYear()} Rizdeen Travels. All rights
               reserved.
             </p>
-            <p className="text-white/60">
-              Ministry of Hajj Licensed Agency
-            </p>
-            <p className="flex items-center gap-3">
-              <a href="#" className="hover:text-[#E8651A]">
-                Privacy Policy
-              </a>
+                        <p className="flex items-center gap-3">
+              <a href="https://brothersinfotech.xyz/">Brothers Infotech</a>
               <span className="text-white/30">|</span>
-              <a href="#" className="hover:text-[#E8651A]">
-                Terms of Service
-              </a>
+              
             </p>
           </div>
         </div>
